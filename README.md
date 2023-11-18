@@ -16,3 +16,5 @@ Installer sur votre ordinateur
   *      edge-impulse-daemon --clean
 -   se Rassurer d'avoir un [compte Edge impulse](https://mltools.arduino.cc/login?next=%2Fstudio%2F144605) et d'avoir créer un projet au préable
 ## Création & conservation de données
+  cette étape consiste à créer un ensemble de données représentatif des mots-clés sélectionnés que le modèle ML est censé identifier. Pendant un laps de temps de 3secondes, nous prononcons le mot-clé **rouge** ,**jaune**, et **Vert** , tout en se rapprochant du microphone intégré sur la carte. Dans notre cas nous avons enregistré 35 échantillons pour chaque mots.
+  nous enregistrons également 35 autres échantillons **noise** (c'est à dire enregistré l'environnement dans un silence complet); cet exemple va aider le modèle ML à identifier quand aucun mot-clé n'est prononcé.
