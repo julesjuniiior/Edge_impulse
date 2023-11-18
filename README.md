@@ -10,7 +10,7 @@ Dans le cadre de ce Projet, nous exploiterons Edge Impulse via la plateforme clo
 Installer sur votre ordinateur
 - [Edge Impulse CLI.](https://docs.edgeimpulse.com/docs/tools/edge-impulse-cli/cli-installation) 
 - [Arduino CLI.](https://arduino.github.io/arduino-cli/0.35/) .
-- [Nano 33 BLE Sense board Edge Impulse firmware]()
+- [Nano 33 BLE Sense board Edge Impulse firmware](arduino-nano-33-ble-sense)
 ### connection de la carte au compte Edge impulse
 - pour connecter la carte au compte Edge impulse taper la commande:
   *      edge-impulse-daemon --clean
