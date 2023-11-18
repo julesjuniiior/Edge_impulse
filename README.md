@@ -1,6 +1,6 @@
 # Edge_impulse
 ## Experiment and Description
-Dans le cadre de ce Projet, nous exploiterons Edge Impulse via la plateforme cloud d'Arduino en utilisant un Arduino Nano 33 BLE Sense. L'objectif sera d'implémenter un réseau neuronal artificiel simple, capable de reconnaître des mots-clés dans la parole. Pour ce faire, nous utiliserons du microphone numérique intégré au Nano 33 BLE Sense, le MP34DT05, afin d'écouter notre environnement. En cas de détection d'un mot-clé, la LED RVB intégrée à la carte sera alumée.
+Dans le cadre de ce Projet, nous exploiterons Edge Impulse via la plateforme cloud d'Arduino en utilisant un Arduino Nano 33 BLE Sense. L'objectif sera d'implémenter un réseau neuronal artificiel simple, capable de reconnaître des mots-clés dans la parole. Pour ce faire, nous utiliserons du microphone numérique intégré au Nano 33 BLE Sense, le MP34DT05, afin d'écouter notre environnement. Et en cas de détection d'un mot-clé, la LED RVB intégrée à la carte s'allumera.
 ## Tools
 - [ Nano BLE Sense 33](https://store.arduino.cc/products/arduino-nano-33-ble-sense)
 - [micro-usb cable](https://www.google.com/search?rlz=1C5CHFA_enUS858US858&sxsrf=ALeKk01CbJTvQbYgX6arJbsjcRVmv-3-RQ:1584929968297&q=Micro+USB+cable&spell=1&sa=X&ved=2ahUKEwjl8IOexK_oAhXDqZ4KHZ0mCmcQBSgAegQIDhAn&biw=1680&bih=832)
