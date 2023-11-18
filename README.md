@@ -13,6 +13,6 @@ Installer sur votre ordinateur
 - [Nano 33 BLE Sense board Edge Impulse firmware]()
 ### connection de la carte au compte Edge impulse
 - pour connecter la carte au compte Edge impulse taper la commande:
--       -edge-impulse-daemon --clean
+  *      -edge-impulse-daemon --clean
 -   se Rassurer d'avoir un [compte Edge impulse](https://mltools.arduino.cc/login?next=%2Fstudio%2F144605) et d'avoir créer un projet au préable
 ## Création & conservation de données
