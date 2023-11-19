@@ -18,7 +18,7 @@ Installer sur votre ordinateur
 ## Création & conservation de données
   cette étape consiste à créer un ensemble de données représentatif des mots-clés sélectionnés que le modèle ML est censé identifier. Pendant un laps de temps de 3secondes, nous prononcons le mot-clé **rouge** ,**jaune**, et **Vert** , tout en se rapprochant du microphone intégré sur la carte. Dans notre cas nous avons enregistré 35 échantillons pour chaque mots.
   nous enregistrons également 35 autres échantillons **noise** (c'est à dire enregistré l'environnement dans un silence complet); cet exemple va aider le modèle ML à identifier quand aucun mot-clé n'est prononcé.
-   ![creation des données]()
+   ![creation des données](image_edge_impulse/creation_donnees.png)
 
   ## Créer une impulsion
   ici l'impulsion est la façon dont le modèle ML est formé, c'est l'endroit où l'on définit les actions qui vont être effectuées sur nos données d'entrée pour les rendre mieux adaptées au ML et un bloc d'apprentissage qui définit l'algorithme pour les données. 
