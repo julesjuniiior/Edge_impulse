@@ -35,4 +35,5 @@ Cela lancera un processus dans lequel Edge Impulse créera une bibliothèque pou
 
 ## Modification du programme et utilisation de la LED RVB intégrée
 Programme Arduino : [Allumage de la led rvb en fonction de la détection du mot clé](nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino)
- *[VIDEO](image_edge_impulse/training.png)
+
+ - [VIDEO]((image_edge_impulse/Video.mp4))
