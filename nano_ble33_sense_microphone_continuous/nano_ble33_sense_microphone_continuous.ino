@@ -58,6 +58,12 @@ static signed short *sampleBuffer;
 static bool debug_nn = false; // Set this to true to see e.g. features generated from the raw signal
 static int print_results = -(EI_CLASSIFIER_SLICES_PER_MODEL_WINDOW);
 
+/* define des pins rvb intégré*/
+#define RED 22
+#define Yellow 24
+#define Green 23
+
+
 /**
  * @brief      Arduino setup function
  */
@@ -68,6 +74,10 @@ void setup()
     // comment out the below line to cancel the wait for USB connection (needed for native USB)
     while (!Serial);
     Serial.println("Edge Impulse Inferencing Demo");
+
+     pinMode(RED, OUTPUT);
+    pinMode(Yellow, OUTPUT);
+    pinMode(Green, OUTPUT);
 
     // summary of inferencing settings (from model_metadata.h)
     ei_printf("Inferencing settings:\n");
@@ -105,6 +115,38 @@ void loop()
         ei_printf("ERR: Failed to run classifier (%d)\n", r);
         return;
     }
+  // Condition pour afficher la led en  couleur Jaune 
+
+    if(result.classification[3].value >= 0.85)
+    {
+      digitalWrite(RED, LOW);
+      digitalWrite(Yellow, HIGH);
+      digitalWrite(Green, LOW);
+    }
+
+    // Condition pour afficher la led en couleur Verte 
+    else if (result.classification[1].value >= 0.85)
+    {
+      digitalWrite(RED, HIGH);
+      digitalWrite(Yellow, HIGH);
+      digitalWrite(Green, LOW);
+      }
+      
+// Condition pour afficher la couleur rouge 
+else if (result.classification[0].value >= 0.85)
+    {
+      digitalWrite(RED, LOW);
+      digitalWrite(Yellow, HIGH);
+      digitalWrite(Green, HIGH);
+      }
+// Condition pour n'afficher aucune couleur en mode noise
+else if (result.classification[2].value >= 0.85)
+    {
+      digitalWrite(RED, HIGH);
+      digitalWrite(Yellow, HIGH);
+      digitalWrite(Green, HIGH);
+      }
+
 
     if (++print_results >= (EI_CLASSIFIER_SLICES_PER_MODEL_WINDOW)) {
         // print the predictions
