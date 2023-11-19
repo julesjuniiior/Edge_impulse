@@ -23,14 +23,16 @@ Installer sur votre ordinateur
   ## Créer une impulsion
   ici l'impulsion est la façon dont le modèle ML est formé, c'est l'endroit où l'on définit les actions qui vont être effectuées sur nos données d'entrée pour les rendre mieux adaptées au ML et un bloc d'apprentissage qui définit l'algorithme pour les données. 
   ![impulsion](image_edge_impulse/impulse.png)
+  ![impulsion](image_edge_impulse/df.png)
   
   ## Entraîner le modèle ML
   * une que les fonctionnalités de notre ensemble de données sont prêtes à être utilisées, on entraine maintenant notre modèle
 nous pouvons observer que notre score est de 81,3% qui n'est peut être pas optimal mais suffisant pour détecter les mots clés. celà peut être du au fait que nous avons assez enregistré de données (dans notre cas 30 échantillons) ou encore du à la présence des enregistrement non représentatifs
-  ![Entrainer]()
+  ![Entrainer](image_edge_impulse/training.png)
 ## Deployement et utilisation du modèle
 Le ML que nous avons formé est déjà prêt pour son utilisation avec du matériel embarqué tel que des microcontrôleurs. 
 Cela lancera un processus dans lequel Edge Impulse créera une bibliothèque pour la carte Arduino contenant le modèle ML que formé.
 
 ## Modification du programme et utilisation de la LED RVB intégrée
 Programme Arduino : [Allumage de la led rvb en fonction de la détection du mot clé](nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino)
+ *[VIDEO](image_edge_impulse/training.png)
