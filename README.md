@@ -33,4 +33,4 @@ Le ML que nous avons formé est déjà prêt pour son utilisation avec du matér
 Cela lancera un processus dans lequel Edge Impulse créera une bibliothèque pour la carte Arduino contenant le modèle ML que formé.
 
 ## Modification du programme et utilisation de la LED RVB intégrée
-Programme Arduino : [Allumage de la led rvb en fonction de la détection du mot clé]()
+Programme Arduino : [Allumage de la led rvb en fonction de la détection du mot clé](nano_ble33_sense_microphone_continuous/nano_ble33_sense_microphone_continuous.ino)
