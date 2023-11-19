@@ -27,6 +27,7 @@ Installer sur votre ordinateur
   ## Entraîner le modèle ML
   * une que les fonctionnalités de notre ensemble de données sont prêtes à être utilisées, on entraine maintenant notre modèle
 nous pouvons observer que notre score est de 81,3% qui n'est peut être pas optimal mais suffisant pour détecter les mots clés. celà peut être du au fait que nous avons assez enregistré de données (dans notre cas 30 échantillons) ou encore du à la présence des enregistrement non représentatifs
+ ![impulsion]()
 ## Deployement et utilisation du modèle
 Le ML que nous avons formé est déjà prêt pour son utilisation avec du matériel embarqué tel que des microcontrôleurs. 
 Cela lancera un processus dans lequel Edge Impulse créera une bibliothèque pour la carte Arduino contenant le modèle ML que formé.
